@@ -40,7 +40,7 @@ public class GKActivity extends AppCompatActivity {
     };
 
     private int[] correctAnswers = {1, 2, 3, 4, 1, 2, 3, 4, 1, 2};
-    private int currentQuestion = 0;
+    private int currentQuestion = 1;
     private int score = 0;
 
     @Override
