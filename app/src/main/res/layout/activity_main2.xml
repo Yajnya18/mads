@@ -16,13 +16,14 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.606"
-        app:srcCompat="@drawable/background" />
+        app:srcCompat="@drawable/background"
+        android:contentDescription="@string/background" />
 
     <TextView
         android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="CHOOSE YOUR QUIZ TOPIC"
+        android:text="@string/choose_your_quiz_topic"
         android:textColor="#E91E63"
         android:textSize="24sp"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -37,18 +38,19 @@
         android:layout_width="257dp"
         android:layout_height="56dp"
         android:backgroundTint="#E91E63"
-        android:text="BOLLYWOOD"
+        android:text="@string/film"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499" />
 
     <Button
         android:id="@+id/buttonKids"
         android:layout_width="257dp"
         android:layout_height="56dp"
         android:backgroundTint="#E91E63"
-        android:text="KIDS"
+        android:text="@string/sports"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -60,7 +62,7 @@
         android:layout_width="257dp"
         android:layout_height="56dp"
         android:backgroundTint="#E91E63"
-        android:text="GENERAL KNOWLEDGE"
+        android:text="@string/general_knowledge"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

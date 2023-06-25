@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="choose_your_quiz_topic">CHOOSE YOUR QUIZ TOPIC</string>
+    <string name="film">Film</string>
+    <string name="sports">Sports</string>
+    <string name="general_knowledge">GENERAL KNOWLEDGE</string>
+    <string name="submit">Submit</string>
+    <string name="background">BackGround</string>
+</resources>

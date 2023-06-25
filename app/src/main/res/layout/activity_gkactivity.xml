@@ -4,12 +4,12 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".GKActivity">
+    tools:context=".QuizActivity">
+
     <TextView
         android:id="@+id/questtxt"
-        android:layout_width="374dp"
-        android:layout_height="77dp"
-        android:text="The Question will be displayes here"
+        android:layout_width="370dp"
+        android:layout_height="257dp"
         android:textAlignment="center"
         android:textColor="#670426"
         android:textSize="24sp"
@@ -25,7 +25,6 @@
         android:id="@+id/btna"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Option A"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
@@ -36,7 +35,6 @@
         android:id="@+id/btnd"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Option D"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -49,7 +47,7 @@
         android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:backgroundTint="#0A830F"
-        android:text="Submit"
+        android:text="@string/submit"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -61,7 +59,6 @@
         android:id="@+id/btnb"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Option B"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
@@ -73,25 +70,12 @@
         android:id="@+id/btnc"
         android:layout_width="300dp"
         android:layout_height="wrap_content"
-        android:text="Option C"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.495"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.658" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="173dp"
-        android:layout_height="143dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.298"
-        tools:srcCompat="@tools:sample/avatars" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
