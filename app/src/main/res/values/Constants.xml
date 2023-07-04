@@ -6,4 +6,7 @@
     <string name="general_knowledge">GENERAL KNOWLEDGE</string>
     <string name="submit">Submit</string>
     <string name="background">BackGround</string>
+    <string name="your_score">Your score</string>
+    <string name="play_again">Play Again</string>
+    <string name="textview">TextView</string>
 </resources>
