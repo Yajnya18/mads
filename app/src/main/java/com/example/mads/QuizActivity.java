@@ -72,7 +72,7 @@ public class QuizActivity extends AppCompatActivity {
             //always remember to close your input and output streams
             isr.close();
             reader.close();
-            proBar.setVisibility(View.GONE);
+           // proBar.setVisibility(View.GONE);
         } catch (IOException e) {
             Log.e("HTTP GET:", e.toString());
         } catch (JSONException e) {
@@ -84,7 +84,7 @@ public class QuizActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gkactivity);
-        proBar = findViewById(R.id.progressBar);
+       // proBar = findViewById(R.id.progressBar);
         Thread loadDataThread = new Thread(() -> loadQuizData(getIntent().getExtras().getString("category")));
         loadDataThread.start();
         try {
@@ -130,7 +130,6 @@ public class QuizActivity extends AppCompatActivity {
             optionButtons[i].setBackgroundColor(Color.parseColor("#333333"));
             optionButtons[i].setEnabled(true);
             optionButtons[i].setOnClickListener(view -> checkAnswer());
-
         }
     }
 

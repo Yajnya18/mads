@@ -4,27 +4,8 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#194162"
     tools:context=".SubmitActivity">
-
-    <TextView
-        android:id="@+id/textView10"
-        android:layout_width="fill_parent"
-        android:layout_height="52dp"
-        android:layout_marginStart="102dp"
-        android:layout_marginTop="101dp"
-        android:layout_marginEnd="103dp"
-        android:layout_marginBottom="582dp"
-        android:text="@string/your_score"
-        android:textAlignment="center"
-        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.518"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0"
-        tools:text="@tools:sample/full_names" />
 
     <Button
         android:id="@+id/playAgain"
@@ -32,29 +13,52 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="158dp"
         android:layout_marginEnd="159dp"
-        android:layout_marginBottom="90dp"
         android:backgroundTint="#DF0F56"
         android:text="@string/play_again"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.711" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="493dp"
+        android:layout_height="899dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.513"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.664"
+        app:srcCompat="@drawable/score" />
 
     <TextView
         android:id="@+id/score"
-        android:layout_width="fill_parent"
-        android:layout_height="240dp"
-        android:layout_marginStart="135dp"
-        android:layout_marginTop="88dp"
-        android:layout_marginEnd="136dp"
-        android:layout_marginBottom="161dp"
-        android:width="@android:dimen/thumbnail_width"
-        android:text="@string/textview"
-        android:textAlignment="center"
-        app:autoSizeTextType="uniform"
-        app:layout_constraintBottom_toTopOf="@+id/playAgain"
+        android:layout_width="141dp"
+        android:layout_height="86dp"
+        android:textSize="64sp"
+        app:layout_constraintBottom_toBottomOf="@+id/imageView5"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.477"
+        app:layout_constraintHorizontal_bias="0.688"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView10"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.416" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="YOUR SCORE IS"
+        android:textColor="#EFE9E9"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.195" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
