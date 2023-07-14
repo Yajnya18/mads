@@ -24,6 +24,7 @@ import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Random;
+import java.util.*;
 
 public class QuizActivity extends AppCompatActivity {
     private TextView questionTextView;
@@ -61,7 +62,7 @@ public class QuizActivity extends AppCompatActivity {
             //read in the data from input stream, this can be done a variety of ways
             BufferedReader reader = new BufferedReader(isr);
             StringBuilder sb = new StringBuilder();
-            while ((line = reader.readLine()) != null) {
+            while ((line = reader.readLine()) != null){
                 sb.append(line).append("\n");
             }
             //get the string version of the response data
